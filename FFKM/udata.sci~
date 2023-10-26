@@ -1,0 +1,37 @@
+// calcula a médias de todos os dados
+function AU=udata(M, dadt)// M matriz dos dados, dadt media dos dados
+     
+distudata=dist(M,dadt)
+
+[nl1,nc1]=size(distudata)
+
+        for i=1:nl1;
+        
+         somad=0;
+        
+        
+
+              somad=somad+(1/distudata(i)^(1/(m-1));// substituir 2 po m 
+              
+                      
+       
+        
+        totald(i)=somad;
+        // soma das distâncias de cada amostra aos clusters
+        end
+
+
+      for i=1:nl1;
+    
+        for j=1:nc1;
+ 
+            ufuzzyd(i,j)=(1/distudata(i,j))^(1/(m-1))/(totald(i));   // fuzzy completa
+   // ufuzzy=abs(ufuzzy)
+    
+    end
+    
+end
+
+       AU=ufuzzy
+      
+endfunction
